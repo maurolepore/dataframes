@@ -1,9 +1,6 @@
 ---
-title: "Start with data in R: What are data frames?"
-subtitle: 
-output: 
-  github_document:
-    toc: true
+title: "Load external data from a .csv file into a data frame"
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -14,24 +11,67 @@ knitr::opts_chunk$set(
 )
 ```
 
-By bit.ly/mauro_lepore
+* This page: http://bit.ly/2018-04-03-dataframes.
+* DataCarpentry [lesson](http://bit.ly/2GQue5W).
 
-Lesson: http://www.datacarpentry.org/R-ecology-lesson/02-starting-with-data
+---
 
+## Presentation of the Survey Data
 
-# Learning Objectives
+`surveys`: Species repartition and weight of animals caught in plots in a study area ([via](http://bit.ly/2GOdpIV)).
 
-* Describe what a data frame is.
-* Load external data from a .csv file into a data frame.
-* Summarize the contents of a data frame.
-* Manipulate categorical data.
-* Change how character strings are handled in a data frame.
-* Format dates.
+![](https://i.imgur.com/SGqtN09.png)
 
+### Setup
 
+```{r pkg}
+# Install software
+# If you haven't yet -- once for good
+# install.packages("tidyverse")
 
+# "Open" software
+# Every time you re-run this document (Ctrl + Alt + R)
+library(tidyverse)
+```
 
+### Get data from the web: http://bit.ly/carpentry-start-with-data-surveys
 
+![](https://i.imgur.com/B103PIO.png)
 
+### Import dataset from text (__readr__ lives in the __tidyverse__)
 
+![](https://i.imgur.com/Sn3lNv2.png)
 
+## Provide url, update, copy the code, and cancel
+
+![](https://i.imgur.com/XxxcJAn.png)
+
+### Paste, rename?
+
+```{r}
+library(readr)
+surveys <- read_csv("http://bit.ly/carpentry-start-with-data-surveys")
+```
+### View data
+
+```
+View(surveys)
+```
+
+![](https://i.imgur.com/5viRubE.png)
+
+### Visualize contents in alternative ways
+
+```{r}
+head(surveys)
+```
+
+__You just met a data frame. What do you think data frames are?__
+
+* Continue [lesson](http://bit.ly/2GQue5W).
+
+---
+
+* [Contact Mauro](https://github.com/maurolepore).
+
+<iframe src="https://todaysmeet.com/room/3261852/embed?type=live&hide_ui=0" height="400" width="100%"></iframe>
