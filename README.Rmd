@@ -1,0 +1,18 @@
+---
+title: "Start with data in R: What are data frames?"
+subtitle: 
+output: 
+  github_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+By bit.ly/mauro_lepore
+
+Lesson: http://www.datacarpentry.org/R-ecology-lesson/02-starting-with-data
+
+
+
