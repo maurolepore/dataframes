@@ -1,6 +1,8 @@
 ---
 title: "Load external data from a .csv file into a data frame"
-output: github_document
+output: 
+  github_document:
+    toc: true
 ---
 
 ```{r setup, include=FALSE}
@@ -11,10 +13,13 @@ knitr::opts_chunk$set(
 )
 ```
 
-* This page: http://bit.ly/2018-04-03-dataframes.
-* DataCarpentry [lesson](http://bit.ly/2GQue5W).
-
 ---
+
+* This document:
+    * Web page: http://bit.ly/carpentry-loaddata
+    * View the project on rstudio.cloud: https://rstudio.cloud/project/27503
+
+* DataCarpentry [lesson](http://bit.ly/2GQue5W).
 
 ## Presentation of the Survey Data
 
@@ -34,7 +39,9 @@ knitr::opts_chunk$set(
 library(tidyverse)
 ```
 
-### Get data from the web: http://bit.ly/carpentry-start-with-data-surveys
+### Get data from the web
+
+File url: http://bit.ly/carpentry-start-with-data-surveys
 
 ![](https://i.imgur.com/B103PIO.png)
 
@@ -42,14 +49,13 @@ library(tidyverse)
 
 ![](https://i.imgur.com/Sn3lNv2.png)
 
-## Provide url, update, copy the code, and cancel
+### Provide url, update, copy the code, and cancel
 
 ![](https://i.imgur.com/XxxcJAn.png)
 
 ### Paste, rename?
 
 ```{r}
-library(readr)
 surveys <- read_csv("http://bit.ly/carpentry-start-with-data-surveys")
 ```
 ### View data
@@ -60,7 +66,7 @@ View(surveys)
 
 ![](https://i.imgur.com/5viRubE.png)
 
-### Visualize contents in alternative ways
+### View only the first few rows
 
 ```{r}
 head(surveys)
@@ -72,6 +78,6 @@ __You just met a data frame. What do you think data frames are?__
 
 ---
 
-* [Contact Mauro](https://github.com/maurolepore).
-
 <iframe src="https://todaysmeet.com/room/3261852/embed?type=live&hide_ui=0" height="400" width="100%"></iframe>
+
+* [Contact Mauro](https://github.com/maurolepore).
