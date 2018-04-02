@@ -20,7 +20,7 @@ Load external data from a .csv file into a data frame
 Presentation of the Survey Data
 -------------------------------
 
-`surveys`: Species repartition and weight of animals caught in plots in a study area ([via](http://bit.ly/2GOdpIV)).
+`surveys`: Species repartition and weight of animals caught in plots ([via](http://bit.ly/2GOdpIV)).
 
 ![](https://i.imgur.com/SGqtN09.png)
 
