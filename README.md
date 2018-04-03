@@ -25,14 +25,9 @@ Back to the lesson
 
 > To download the data into the data/ subdirectory, run the following:
 
-You may want to try:
+WARNING: This will fail. Why? (Run and read the error message)
 
--   `download` and get help from auto-completion
--   `??download`
--   Google whatever in R
--   `?download.file`, or `help(download.file)`, or `download.file` + F1
-
-WARNING: This fails. Why? (Run and read the error message)
+Hint: \* Look in the Files tab. What's missing? \* What are the first two arguments of `download.file()`? \* Find out with the help of autocompletion (press TAB) or with `?`
 
 ``` r
 # MISTERY-FUNCTION-GOES-HERE("data")
