@@ -4,7 +4,7 @@ Load external data from a .csv file into a data frame
 -   [See <https://bit.ly/carpentry-slides>](#see-httpsbit.lycarpentry-slides)
 -   [Try by intuition](#try-by-intuition)
 -   [Back to the lesson](#back-to-the-lesson)
--   [Resources](#resources)
+-   [Thank you](#thank-you)
 
 ------------------------------------------------------------------------
 
@@ -81,20 +81,8 @@ head(surveys)
 #> 6 Neotoma albigula Rodent   Control
 ```
 
-**You just met a data frame. The next section will answer, What are data frames?**
-
--   Continue [lesson](http://bit.ly/2GQue5W).
-
-Resources
+Thank you
 =========
 
--   Style guide: <http://style.tidyverse.org/>
--   Read data into R
-    -   [With only base R](https://goo.gl/99kJEX)
-    -   [With **readr**](https://goo.gl/vUJiHX)
-
-------------------------------------------------------------------------
-
-<iframe src="https://todaysmeet.com/room/3261852/embed?type=live&amp;hide_ui=0" height="400" width="100%">
-</iframe>
--   [Contact Mauro](https://github.com/maurolepore).
+-   <https://bit.ly/carpentry-slides>
+-   <https://bit.ly/mauro_lepore>

@@ -29,6 +29,9 @@ Look at this image and figure out what to do next.
 
 ![](https://i.imgur.com/Sn3lNv2.png)
 
+.
+
+### Go to [rstudio.cloud](https://rstudio.cloud/project/27503)
 
 ## Links | bit.ly/carpentry-slides
 
@@ -39,4 +42,19 @@ Look at this image and figure out what to do next.
 * DataCarpentry [lesson](http://bit.ly/2GQue5W).
 
 * Data [source](https://ndownloader.figshare.com/files/2292169)
+
+## Resources | bit.ly/carpentry-slides
+
+* Style guide: http://style.tidyverse.org/
+* Read data into R
+    * [With only base R](https://goo.gl/99kJEX)
+    * [With __readr__](https://goo.gl/vUJiHX)
+
+.
+
+### [Contact Mauro](https://github.com/maurolepore)
+
+## Feedback | bit.ly/carpentry-slides
+
+<iframe src="https://todaysmeet.com/room/3261852/embed?type=live&hide_ui=0" height="400" width="100%"></iframe>
 

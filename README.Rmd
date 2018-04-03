@@ -78,19 +78,8 @@ surveys
 head(surveys)
 ```
 
-__You just met a data frame. The next section will answer, What are data frames?__
+# Thank you
 
-* Continue [lesson](http://bit.ly/2GQue5W).
+* https://bit.ly/carpentry-slides
+* https://bit.ly/mauro_lepore
 
-# Resources
-
-* Style guide: http://style.tidyverse.org/
-* Read data into R
-    * [With only base R](https://goo.gl/99kJEX)
-    * [With __readr__](https://goo.gl/vUJiHX)
-
----
-
-<iframe src="https://todaysmeet.com/room/3261852/embed?type=live&hide_ui=0" height="400" width="100%"></iframe>
-
-* [Contact Mauro](https://github.com/maurolepore).
