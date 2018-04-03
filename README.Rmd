@@ -1,8 +1,8 @@
 ---
 title: "Load external data from a .csv file into a data frame"
 output: 
-  github_document:
-    toc: true
+ github_document:
+   toc: true
 ---
 
 ```{r setup, include=FALSE}
@@ -15,66 +15,90 @@ knitr::opts_chunk$set(
 
 ---
 
+## Links
+
 * This document:
     * Web page: http://bit.ly/carpentry-loaddata
     * View the project on rstudio.cloud: https://rstudio.cloud/project/27503
 
 * DataCarpentry [lesson](http://bit.ly/2GQue5W).
 
-## Presentation of the Survey Data
+* Data: https://ndownloader.figshare.com/files/2292169
 
-`surveys`: Species repartition and weight of animals caught in plots ([via](http://bit.ly/2GOdpIV)).
+# Presentation of the Survey Data
+
+`surveys`: Species repartition and weight of animals caught in plots.
 
 ![](https://i.imgur.com/SGqtN09.png)
 
-### Setup
+# Try by intuition
 
-```{r pkg}
-# Install software
-# If you haven't yet -- once for good
-# install.packages("tidyverse")
-
-# "Open" software
-# Every time you re-run this document (Ctrl + Alt + R)
-library(tidyverse)
-```
-
-### Get data from the web
-
-File url: http://bit.ly/carpentry-start-with-data-surveys
-
-![](https://i.imgur.com/B103PIO.png)
-
-### Import dataset from text (__readr__ lives in the __tidyverse__)
+Look at this image and figure out what to do next.
 
 ![](https://i.imgur.com/Sn3lNv2.png)
 
-### Provide url, update, copy the code, and cancel
-
-![](https://i.imgur.com/XxxcJAn.png)
-
-### Paste, rename?
+Document what you did.
 
 ```{r}
-surveys <- read_csv("http://bit.ly/carpentry-start-with-data-surveys")
-```
-### View data
+# Some code goes here
 
 ```
-View(surveys)
+
+# Back to the lesson
+
+> To download the data into the data/ subdirectory, run the following:
+
+WARNING: This fails. Why? (Run and read the error message)
+
+```{r download-problem, error=TRUE}
+# MISTERY-FUNCTION-GOES-HERE("data")
+
+download.file(
+  "https://ndownloader.figshare.com/files/2292169",
+  "data/portal_data_joined.csv"
+)
 ```
 
-![](https://i.imgur.com/5viRubE.png)
+```{r download-solution, echo=FALSE}
+# MISTERY-FUNCTION-GOES-HERE("data")
+# TODO REMOVE
+dir.create("data")
 
-### View only the first few rows
+download.file(
+  "https://ndownloader.figshare.com/files/2292169",
+  "data/portal_data_joined.csv"
+)
+```
+
+> You are now ready to load the data:
+
+```{r}
+surveys <- read.csv("data/portal_data_joined.csv")
+```
+
+> Print the variable's value: `surveys`
+
+```{r, eval=FALSE}
+# WARNING: In the console, this prints looooong output
+surveys
+```
+
+> Let's check the top (the first 6 lines) of this data frame using the function `head()`:
 
 ```{r}
 head(surveys)
 ```
 
-__You just met a data frame. What do you think data frames are?__
+__You just met a data frame. The next section will answer, What are data frames?__
 
 * Continue [lesson](http://bit.ly/2GQue5W).
+
+# Resources
+
+* Style guide: http://style.tidyverse.org/
+* Read data into R
+    * [With only base R](https://goo.gl/99kJEX)
+    * [With __readr__](https://goo.gl/vUJiHX)
 
 ---
 

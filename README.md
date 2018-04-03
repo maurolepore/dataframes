@@ -1,111 +1,109 @@
 Load external data from a .csv file into a data frame
 ================
 
+-   [Links](#links)
 -   [Presentation of the Survey Data](#presentation-of-the-survey-data)
-    -   [Setup](#setup)
-    -   [Get data from the web](#get-data-from-the-web)
-    -   [Import dataset from text (**readr** lives in the **tidyverse**)](#import-dataset-from-text-readr-lives-in-the-tidyverse)
-    -   [Provide url, update, copy the code, and cancel](#provide-url-update-copy-the-code-and-cancel)
-    -   [Paste, rename?](#paste-rename)
-    -   [View data](#view-data)
-    -   [View only the first few rows](#view-only-the-first-few-rows)
+-   [Try by intuition](#try-by-intuition)
+-   [Back to the lesson](#back-to-the-lesson)
+-   [Resources](#resources)
 
 ------------------------------------------------------------------------
+
+Links
+-----
 
 -   This document:
     -   Web page: <http://bit.ly/carpentry-loaddata>
     -   View the project on rstudio.cloud: <https://rstudio.cloud/project/27503>
 -   DataCarpentry [lesson](http://bit.ly/2GQue5W).
 
-Presentation of the Survey Data
--------------------------------
+-   Data: <https://ndownloader.figshare.com/files/2292169>
 
-`surveys`: Species repartition and weight of animals caught in plots ([via](http://bit.ly/2GOdpIV)).
+Presentation of the Survey Data
+===============================
+
+`surveys`: Species repartition and weight of animals caught in plots.
 
 ![](https://i.imgur.com/SGqtN09.png)
 
-### Setup
+Try by intuition
+================
 
-``` r
-# Install software
-# If you haven't yet -- once for good
-# install.packages("tidyverse")
-
-# "Open" software
-# Every time you re-run this document (Ctrl + Alt + R)
-library(tidyverse)
-#> ── Attaching packages ─────────────────────────────────────────────────────── tidyverse 1.2.1 ──
-#> ✔ ggplot2 2.2.1     ✔ purrr   0.2.4
-#> ✔ tibble  1.4.2     ✔ dplyr   0.7.4
-#> ✔ tidyr   0.8.0     ✔ stringr 1.3.0
-#> ✔ readr   1.1.1     ✔ forcats 0.3.0
-#> ── Conflicts ────────────────────────────────────────────────────────── tidyverse_conflicts() ──
-#> ✖ dplyr::filter() masks stats::filter()
-#> ✖ dplyr::lag()    masks stats::lag()
-```
-
-### Get data from the web
-
-File url: <http://bit.ly/carpentry-start-with-data-surveys>
-
-![](https://i.imgur.com/B103PIO.png)
-
-### Import dataset from text (**readr** lives in the **tidyverse**)
+Look at this image and figure out what to do next.
 
 ![](https://i.imgur.com/Sn3lNv2.png)
 
-### Provide url, update, copy the code, and cancel
-
-![](https://i.imgur.com/XxxcJAn.png)
-
-### Paste, rename?
+Document what you did.
 
 ``` r
-surveys <- read_csv("http://bit.ly/carpentry-start-with-data-surveys")
-#> Parsed with column specification:
-#> cols(
-#>   record_id = col_integer(),
-#>   month = col_integer(),
-#>   day = col_integer(),
-#>   year = col_integer(),
-#>   plot_id = col_integer(),
-#>   species_id = col_character(),
-#>   sex = col_character(),
-#>   hindfoot_length = col_integer(),
-#>   weight = col_integer(),
-#>   genus = col_character(),
-#>   species = col_character(),
-#>   taxa = col_character(),
-#>   plot_type = col_character()
-#> )
+# Some code goes here
 ```
 
-### View data
+Back to the lesson
+==================
 
-    View(surveys)
+> To download the data into the data/ subdirectory, run the following:
 
-![](https://i.imgur.com/5viRubE.png)
+WARNING: This fails. Why? (Run and read the error message)
 
-### View only the first few rows
+``` r
+# MISTERY-FUNCTION-GOES-HERE("data")
+
+download.file(
+  "https://ndownloader.figshare.com/files/2292169",
+  "data/portal_data_joined.csv"
+)
+#> Warning in download.file("https://ndownloader.figshare.com/files/
+#> 2292169", : URL https://ndownloader.figshare.com/files/2292169: cannot open
+#> destfile 'data/portal_data_joined.csv', reason 'No such file or directory'
+#> Warning in download.file("https://ndownloader.figshare.com/files/
+#> 2292169", : download had nonzero exit status
+```
+
+> You are now ready to load the data:
+
+``` r
+surveys <- read.csv("data/portal_data_joined.csv")
+```
+
+> Print the variable's value: `surveys`
+
+``` r
+# WARNING: In the console, this prints looooong output
+surveys
+```
+
+> Let's check the top (the first 6 lines) of this data frame using the function `head()`:
 
 ``` r
 head(surveys)
-#> # A tibble: 6 x 13
-#>   record_id month   day  year plot_id species_id sex   hindfoot_length
-#>       <int> <int> <int> <int>   <int> <chr>      <chr>           <int>
-#> 1         1     7    16  1977       2 NL         M                  32
-#> 2        72     8    19  1977       2 NL         M                  31
-#> 3       224     9    13  1977       2 NL         <NA>               NA
-#> 4       266    10    16  1977       2 NL         <NA>               NA
-#> 5       349    11    12  1977       2 NL         <NA>               NA
-#> 6       363    11    12  1977       2 NL         <NA>               NA
-#> # ... with 5 more variables: weight <int>, genus <chr>, species <chr>,
-#> #   taxa <chr>, plot_type <chr>
+#>   record_id month day year plot_id species_id sex hindfoot_length weight
+#> 1         1     7  16 1977       2         NL   M              32     NA
+#> 2        72     8  19 1977       2         NL   M              31     NA
+#> 3       224     9  13 1977       2         NL                  NA     NA
+#> 4       266    10  16 1977       2         NL                  NA     NA
+#> 5       349    11  12 1977       2         NL                  NA     NA
+#> 6       363    11  12 1977       2         NL                  NA     NA
+#>     genus  species   taxa plot_type
+#> 1 Neotoma albigula Rodent   Control
+#> 2 Neotoma albigula Rodent   Control
+#> 3 Neotoma albigula Rodent   Control
+#> 4 Neotoma albigula Rodent   Control
+#> 5 Neotoma albigula Rodent   Control
+#> 6 Neotoma albigula Rodent   Control
 ```
 
-**You just met a data frame. What do you think data frames are?**
+**You just met a data frame. The next section will answer, What are data frames?**
 
 -   Continue [lesson](http://bit.ly/2GQue5W).
+
+Resources
+=========
+
+-   Style guide: <http://style.tidyverse.org/>
+-   Read data into R
+    -   [With only base R](https://goo.gl/99kJEX)
+    -   [With **readr**](https://goo.gl/vUJiHX)
 
 ------------------------------------------------------------------------
 
