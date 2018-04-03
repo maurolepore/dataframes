@@ -1,37 +1,18 @@
 Load external data from a .csv file into a data frame
 ================
 
--   [Links](#links)
--   [Presentation of the Survey Data](#presentation-of-the-survey-data)
+-   [See <https://bit.ly/carpentry-slides>](#see-httpsbit.lycarpentry-slides)
 -   [Try by intuition](#try-by-intuition)
 -   [Back to the lesson](#back-to-the-lesson)
 -   [Resources](#resources)
 
 ------------------------------------------------------------------------
 
-Links
------
-
--   This document:
-    -   Web page: <http://bit.ly/carpentry-loaddata>
-    -   View the project on rstudio.cloud: <https://rstudio.cloud/project/27503>
--   DataCarpentry [lesson](http://bit.ly/2GQue5W).
-
--   Data: <https://ndownloader.figshare.com/files/2292169>
-
-Presentation of the Survey Data
-===============================
-
-`surveys`: Species repartition and weight of animals caught in plots.
-
-![](https://i.imgur.com/SGqtN09.png)
+See <https://bit.ly/carpentry-slides>
+-------------------------------------
 
 Try by intuition
-================
-
-Look at this image and figure out what to do next.
-
-![](https://i.imgur.com/Sn3lNv2.png)
+----------------
 
 Document what you did.
 

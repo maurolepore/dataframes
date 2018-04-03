@@ -1,0 +1,42 @@
+---
+title: "Load external data from a .csv file into a data frame."
+subtitle: "http://bit.ly/carpentry-slides"
+author: "https://bit.ly/mauro_lepore"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Data | bit.ly/carpentry-slides
+
+`surveys`: Species and weight of animals in plots.
+
+![](https://i.imgur.com/7QJWO4y.png)
+
+## Data | bit.ly/carpentry-slides
+
+https://ndownloader.figshare.com/files/2292169
+
+![](https://i.imgur.com/lPFbGv5.png)
+
+## Try by intuition | bit.ly/carpentry-slides
+
+Data URL: https://ndownloader.figshare.com/files/2292169
+
+Look at this image and figure out what to do next.
+
+![](https://i.imgur.com/Sn3lNv2.png)
+
+
+## Links | bit.ly/carpentry-slides
+
+* This document:
+    * View the project on [rstudio.cloud](https://rstudio.cloud/project/27503)
+    * View the project on [GitHub](https://github.com/maurolepore/loaddata)
+
+* DataCarpentry [lesson](http://bit.ly/2GQue5W).
+
+* Data [source](https://ndownloader.figshare.com/files/2292169)
+
