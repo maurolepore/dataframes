@@ -9,6 +9,19 @@ output: ioslides_presentation
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## Lesson | bit.ly/carpentry-slides
+
+![](https://i.imgur.com/iKebYYf.png)
+
+## Why bother? | bit.ly/carpentry-slides
+
+![](https://i.imgur.com/GZIWLKF.png)
+
+
+## Why bother? | bit.ly/carpentry-slides
+
+![](https://i.imgur.com/lOIuTxA.png)
+
 ## Data | bit.ly/carpentry-slides
 
 `surveys`: Species and weight of animals in plots.
@@ -27,10 +40,11 @@ How would you import data into a spreadsheet?
 
 ![](https://i.imgur.com/lROkOit.png)
 
-
 ## Try by intuition | bit.ly/carpentry-slides
 
 How would you import data into R?
+
+![](https://i.imgur.com/0SFButS.png)
 
 ## Try by intuition | bit.ly/carpentry-slides
 
