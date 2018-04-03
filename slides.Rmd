@@ -23,6 +23,17 @@ https://ndownloader.figshare.com/files/2292169
 
 ## Try by intuition | bit.ly/carpentry-slides
 
+How would you import data into a spreadsheet?
+
+![](https://i.imgur.com/lROkOit.png)
+
+
+## Try by intuition | bit.ly/carpentry-slides
+
+How would you import data into R?
+
+## Try by intuition | bit.ly/carpentry-slides
+
 Data URL: https://ndownloader.figshare.com/files/2292169
 
 Look at this image and figure out what to do next.
